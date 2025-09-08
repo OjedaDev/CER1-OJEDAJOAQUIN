@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Events - Inicio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Smart Events</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero text-white text-center p-5">
+    <h1>Certamen 1 TLP</h1>
+    
+    <img src="img/Presentacion.png" alt="Certamen TLP" class="img-fluid my-3 "> 
+    <p>08 de Septiembre 2025 - 15:40 hrs</p>
+    <a href="eventos.html#eventoCertamen" class="btn btn-primary">Ver más</a>
+
+    <h3 id="countdownDestacado" class="mt-3 countdown-text"></h3>
+  </section>
+
+
+  <main class="container my-5">
+    <h2 class="mb-4">Próximos Eventos</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+  <div class="card h-100">
+    <img src="img/bruno.jpg" class="card-img-top" alt="Bruno Mars">
+    <div class="card-body">
+      <h5 class="card-title">Bruno Mars</h5>
+      <p class="card-text">
+        Fecha: 28/11/2026 <br>
+        Hora: 21:30 hrs <br>
+        Lugar: Movistar Arena <br>
+        Precio: $185.000
+      </p>
+      <a href="eventos.html#eventoTOP" class="btn btn-primary">Ver más</a>
+      <p id="countdownEventoBM" class="mt-3 countdown-text text-primary fw-bold"></p>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/voodoo.avif" class="card-img-top" alt="Kidd Voodoo">
+          <div class="card-body">
+            <h5 class="card-title">Kidd Voodoo</h5>
+            <p class="card-text">
+              Fecha: 11/10/2025 <br>
+              Hora: 20:00 hrs <br>
+              Lugar: Estadio German Becker <br>
+              Precio: $71.900
+            </p>
+            <a href="eventos.html#eventoFastFest" class="btn btn-primary">Ver más</a>
+            <p id="countdownEventoKV" class="mt-3 countdown-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/Presentacion2.png" class="card-img-top" alt="Certamen TLP">
+          <div class="card-body">
+            <h5 class="card-title">Certamen 1 TLP</h5>
+            <p class="card-text">
+              Fecha: 08/09/2025 <br>
+              Hora: 15:40 hrs <br>
+              Lugar: G209 <br>
+              Precio: Gratis
+            </p>
+            <a href="eventos.html#eventoCertamen" class="btn btn-primary">Ver más</a>
+            <p id="countdownEventoCertamen" class="mt-3 countdown-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">Smart Events © 2025</p>
+    <p class="mb-0">Joaquin Ojeda Saavedra</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script> 
+</body>
+</html>
