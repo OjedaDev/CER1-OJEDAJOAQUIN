@@ -44,3 +44,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form-comentario");
+  const comentariosDiv = document.getElementById("comentarios");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    if (nombre && mensaje) {
+      const fecha = new Date().toISOString().replace("T", " ").slice(0, 16).replace("-", "/").replace("-", "/");
+
+      const nuevoComentario = document.createElement("div");
+      nuevoComentario.className = "card mb-3";
+      nuevoComentario.innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">${nombre} [${fecha}]</h5>
+          <p class="card-text">${mensaje}</p>
+        </div>
+      `;
+
+      comentariosDiv.appendChild(nuevoComentario);
+      form.reset();
+    }
+  });
+});
+
